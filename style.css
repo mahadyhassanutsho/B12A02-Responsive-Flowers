@@ -51,13 +51,17 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 /* Utility Classes */
 
 .wrapper {
   max-width: 1140px;
   margin-inline: auto;
   margin-block: 1rem;
-  padding-inline: 1.5rem;
 }
 
 .semi-bold {
@@ -143,6 +147,10 @@ ul {
     margin-bottom: 1.5rem;
   }
 
+  .wrapper {
+    padding-inline: 1rem;
+  }
+
   .nav-item:nth-child(-n + 3) /* General formula: :nth-child(an + b) */ {
     display: none;
   }
@@ -151,5 +159,14 @@ ul {
     flex-direction: column-reverse;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
+  }
+
+  .banner-content {
+    align-self: flex-start;
+  }
+
+  .banner-img {
+    width: 100vw;
   }
 }
