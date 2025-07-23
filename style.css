@@ -10,6 +10,11 @@
   --font-semibold: 600;
   --font-bold: 700;
 
+  --font-sm: clamp(0.875rem, 0.8rem + 0.5vw, 1rem);
+  --font-base: clamp(1rem, 0.9rem + 0.6vw, 1.125rem);
+  --font-h2: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --font-h1: clamp(2rem, 1.5rem + 2vw, 3rem);
+
   /* Colors */
   --color-primary: #e95a08;
   --color-dark: #8987a1;
@@ -22,4 +27,73 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-darkest);
+  font-size: var(--font-base);
+  font-family: var(--font-inter);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utility Classes */
+
+.wrapper {
+  max-width: 1140px;
+  margin-inline: auto;
+  margin-block: 1rem;
+  padding-inline: 1.5rem;
+}
+
+.semi-bold {
+  font-weight: var(--font-semi-bold);
+}
+
+.bold {
+  font-weight: var(--font-bold);
+}
+
+.color-darker {
+  color: var(--color-darker);
+}
+
+/* Header */
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: var(--font-sm);
+}
+
+.nav-link {
+  display: inline-block; /* Transforms don’t work properly on display: inline elements */
+  transition: color 0.25s, transform 0.25s ease-in;
+}
+
+.nav-link:hover {
+  transform: translateY(2px);
+  color: var(--color-dark);
+}
+
+@media screen and (width <= 576px) {
+  .nav-item:nth-child(-n + 3) /* General formula: :nth-child(an + b) */ {
+    display: none;
+  }
 }
