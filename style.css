@@ -12,6 +12,7 @@
 
   --font-sm: clamp(0.875rem, 0.8rem + 0.5vw, 1rem);
   --font-base: clamp(1rem, 0.9rem + 0.6vw, 1.125rem);
+  --font-h3: clamp(1.25rem, 1.2rem + 1vw, 1.75rem);
   --font-h2: clamp(1.5rem, 1.5rem + 1.5vw, 2.5rem);
   --font-h1: clamp(2rem, 1.5rem + 2vw, 3rem);
 
@@ -39,7 +40,7 @@ body {
 }
 
 body > *:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 h1,
@@ -228,11 +229,19 @@ button {
 
 @media screen and (width <= 576px) {
   body > *:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .wrapper {
     padding-inline: 1rem;
+  }
+
+  .primary-nav {
+    align-items: end;
+  }
+
+  .nav-item {
+    font-size: var(--font-h3);
   }
 
   .nav-item:nth-child(-n + 3) /* General formula: :nth-child(an + b) */ {
