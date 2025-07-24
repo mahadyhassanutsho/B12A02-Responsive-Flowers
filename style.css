@@ -12,7 +12,7 @@
 
   --font-sm: clamp(0.875rem, 0.8rem + 0.5vw, 1rem);
   --font-base: clamp(1rem, 0.9rem + 0.6vw, 1.125rem);
-  --font-h2: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --font-h2: clamp(1.5rem, 1.5rem + 1.5vw, 2.5rem);
   --font-h1: clamp(2rem, 1.5rem + 2vw, 3rem);
 
   /* Colors */
@@ -20,6 +20,7 @@
   --color-dark-50: 00050;
   --color-dark-400: #8987a1;
   --color-dark-600: #252432;
+  --color-dark-800: #111111;
   --color-dark-900: #000;
   --color-white: #fff;
 }
@@ -41,6 +42,13 @@ body > *:not(:last-child) {
   margin-bottom: 3rem;
 }
 
+h1,
+h2,
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -56,19 +64,24 @@ img {
   width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Utility Classes */
 
 .wrapper {
   max-width: 1140px;
   margin-inline: auto;
   margin-block: 1rem;
+  padding-inline: 1rem;
 }
 
-.semi-bold {
+.font-semi-bold {
   font-weight: var(--font-semi-bold);
 }
 
-.bold {
+.font-bold {
   font-weight: var(--font-bold);
 }
 
@@ -84,20 +97,65 @@ img {
   color: var(--color-dark-600);
 }
 
+.color-dark-800 {
+  color: var(--color-dark-800);
+}
+
+.color-dark-900 {
+  color: var(--color-dark-900);
+}
+
 .color-primary {
   color: var(--color-primary);
 }
 
 .font-h1 {
+  font-weight: var(--font-bold);
   font-size: var(--font-h1);
 }
 
 .font-h2 {
+  font-weight: var(--font-bold);
   font-size: var(--font-h2);
+}
+
+.font-base {
+  font-size: var(--font-base);
+}
+
+.font-sm {
+  font-size: var(--font-sm);
 }
 
 .font-noto-serif {
   font-family: var(--font-noto-serif);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid var(--color-primary);
+  border-radius: 0.2rem;
+  transition: color 0.5s, background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #e95a08;
+}
+
+.block {
+  display: block;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 /* Header */
@@ -142,6 +200,32 @@ img {
   margin-bottom: 1rem;
 }
 
+/* Plants */
+.plants > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.plant-card {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.plant-card > img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0.3rem;
+}
+
 @media screen and (width <= 576px) {
   body > *:not(:last-child) {
     margin-bottom: 1.5rem;
@@ -168,5 +252,11 @@ img {
 
   .banner-img {
     width: 100vw;
+  }
+
+  .plants-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
