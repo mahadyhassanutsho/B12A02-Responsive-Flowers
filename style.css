@@ -297,9 +297,11 @@ button {
 }
 
 .deal-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
   justify-content: center;
   border-radius: 1rem;
   width: 100%;
@@ -310,9 +312,19 @@ button {
   /* filter: brightness(0.7); */
 }
 
-.shop-link {
-  color: var(--color-white);
-  text-decoration: underline;
+.darken-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-dark-900);
+  opacity: 0.25;
+  border-radius: inherit;
+}
+
+.deal-card > *:not(.darken-bg) {
+  z-index: 1;
 }
 
 .bloom-deal {
@@ -327,6 +339,17 @@ button {
   background-image: url("./assets/deal-zabo.png");
 
   grid-row: span 2;
+}
+
+.shop-link {
+  color: var(--color-white);
+  border-bottom: 2px solid var(--color-white);
+  transition: opacity 0.5s, transform 0.5s ease-in-out;
+}
+
+.shop-link:hover {
+  opacity: 0.75;
+  transform: translateY(1.25px);
 }
 
 @media screen and (width <= 576px) {
