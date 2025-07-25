@@ -78,6 +78,10 @@ button {
   padding-inline: 1rem;
 }
 
+.logo > img {
+  max-width: 10rem;
+}
+
 .font-semi-bold {
   font-weight: var(--font-semi-bold);
 }
@@ -211,7 +215,7 @@ button {
 
 .nav-link:hover {
   transform: translateY(2px);
-  border-color: var(--color-dark-900);
+  border-color: inherit;
 }
 
 /* Banner */
@@ -394,6 +398,33 @@ button {
   width: 15%;
 }
 
+/* Footer */
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-brand {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-nav > .nav-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(5, auto);
+  gap: 2rem;
+  column-gap: 4rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 @media screen and (width <= 576px) {
   body > *:not(:last-child) {
     margin-bottom: 2.5rem;
@@ -474,5 +505,15 @@ button {
 
   .join-form > .btn-primary {
     width: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-nav > .nav-list {
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+    gap: 1.5rem;
   }
 }
