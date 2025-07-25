@@ -145,8 +145,11 @@ button {
   text-align: center;
 }
 
-.btn-primary {
+.w-full {
   width: 100%;
+}
+
+.btn-primary {
   padding: 0.8rem;
   background-color: var(--color-primary);
   color: white;
@@ -352,6 +355,45 @@ button {
   transform: translateY(1.25px);
 }
 
+/* Join */
+
+.join {
+  margin-inline: auto;
+  height: 533px;
+  width: 100%;
+  max-width: 1440px;
+
+  background-image: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+}
+
+.join-form {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input {
+  padding: 0.8rem;
+  border: 1px solid var(--color-white);
+}
+
+.join-form > .form-input {
+  width: 60%;
+}
+
+.join-form > .btn-primary {
+  width: 15%;
+}
+
 @media screen and (width <= 576px) {
   body > *:not(:last-child) {
     margin-bottom: 2.5rem;
@@ -420,5 +462,17 @@ button {
 
   .zabo-deal {
     grid-row: span 1;
+  }
+
+  .join {
+    height: 276px;
+  }
+
+  .join-form > .form-input {
+    width: 60%;
+  }
+
+  .join-form > .btn-primary {
+    width: auto;
   }
 }
