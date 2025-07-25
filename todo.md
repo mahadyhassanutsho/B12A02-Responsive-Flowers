@@ -2,49 +2,49 @@
 
 ## 🧭 Navbar
 
-- [ ] Add logo/website name on the left (desktop)
-- [ ] Add menu items and cart icon on the right (desktop)
-- [ ] Make mobile navbar:
-  - [ ] Logo/website name on the left
-  - [ ] Cart icon + name on the right
-  - [ ] Hide other navbar elements for mobile
+- [x] Add logo/website name on the left (desktop)
+- [x] Add menu items and cart icon on the right (desktop)
+- [x] Make mobile navbar:
+  - [x] Logo/website name on the left
+  - [x] Cart icon + name on the right
+  - [x] Hide other navbar elements for mobile
 
 ## 🖼️ Banner Section
 
-- [ ] Image on the right, text content on the left (desktop)
-- [ ] Mobile responsiveness:
-  - [ ] Image moves to the top
-  - [ ] Content appears after image
-  - [ ] Content left-aligned
+- [x] Image on the right, text content on the left (desktop)
+- [x] Mobile responsiveness:
+  - [x] Image moves to the top
+  - [x] Content appears after image
+  - [x] Content left-aligned
 
 ## 🌿 Plants Section
 
-- [ ] Centered title and subtitle
-- [ ] Display 8 cards in 4-column grid
-  - [ ] Each card has: image, name, price, Add to Cart button
-- [ ] Mobile responsiveness:
-  - [ ] Display in 2-column layout
+- [x] Centered title and subtitle
+- [x] Display 8 cards in 4-column grid
+  - [x] Each card has: image, name, price, Add to Cart button
+- [x] Mobile responsiveness:
+  - [x] Display in 2-column layout
 
 ## 💚 Plants Lover Section
 
-- [ ] Image on the left, title and list on the right (desktop)
-- [ ] Mobile responsiveness:
-  - [ ] Image moves to top
-  - [ ] Content appears below image
-  - [ ] Content left-aligned
+- [x] Image on the left, title and list on the right (desktop)
+- [x] Mobile responsiveness:
+  - [x] Image moves to top
+  - [x] Content appears below image
+  - [x] Content left-aligned
 
 ## ✉️ Join Section
 
-- [ ] Centered "Join the colorful Bunch" message
-- [ ] Background image covers full section
-- [ ] Input box with placeholder and Subscribe button
-- [ ] Mobile responsive layout
+- [x] Centered "Join the colorful Bunch" message
+- [C] Background image covers full section
+- [x] Input box with placeholder and Subscribe button
+- [x] Mobile responsive layout
 
 ## 🦶 Footer Section
 
-- [ ] Website logo on the left
-- [ ] Links like Home, Features, etc. styled like Figma
-- [ ] Fully responsive design
+- [x] Website logo on the left
+- [x] Links like Home, Features, etc. styled like Figma
+- [x] Fully responsive design
 
 ---
 
@@ -52,14 +52,14 @@
 
 ## 🔖 Latest Deal Section
 
-- [ ] Title and subtitle
-- [ ] Card layout exactly like Figma
-- [ ] Mobile: show one card on display
+- [x] Title and subtitle
+- [x] Card layout exactly like Figma
+- [x] Mobile: show one card on display
 
 ## 🥇 Trusted Plant Lover Badge
 
-- [ ] Position badge over the image (like Figma)
-- [ ] Hide badge on mobile devices
+- [x] Position badge over the image (like Figma)
+- [x] Hide badge on mobile devices
 
 ---
 
@@ -67,5 +67,5 @@
 
 ⚠️ No support will be provided. Google it and try yourself.
 
-- [ ] Add infinite spinning animation to Trusted Plant Lover Badge
-- [ ] Show alert `"Flower Added to Cart"` on Add to Cart button click
+- [x] Add infinite spinning animation to Trusted Plant Lover Badge
+- [x] Show alert `"Flower Added to Cart"` on Add to Cart button click

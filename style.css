@@ -244,6 +244,7 @@ button {
 }
 
 /* Plants */
+
 .plants > *:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -266,7 +267,7 @@ button {
 .plant-card > img {
   width: 100%;
   object-fit: contain;
-  border-radius: 0.3rem;
+  border-radius: 0.1rem;
 }
 
 /* Plants Lover */
@@ -336,7 +337,7 @@ button {
   height: 100%;
   width: 100%;
   background-color: var(--color-dark-900);
-  opacity: 0.25;
+  opacity: 0.4;
   border-radius: inherit;
 }
 
@@ -375,7 +376,7 @@ button {
   margin-inline: auto;
   height: 533px;
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 
   background-image: url("./assets/news-letter-bg.png");
   background-size: cover;
@@ -388,7 +389,7 @@ button {
 }
 
 .join-form {
-  width: 100%;
+  width: 80%;
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -413,6 +414,7 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
