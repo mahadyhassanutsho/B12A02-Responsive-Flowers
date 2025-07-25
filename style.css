@@ -32,6 +32,15 @@
   box-sizing: border-box;
 }
 
+@keyframes round-n-round {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   background-color: var(--color-white);
   color: var(--color-dark-900);
@@ -185,6 +194,7 @@ button {
   top: -100px;
   right: -75px;
   width: 200px;
+  animation: round-n-round 10s linear infinite;
 }
 
 .opacity-50 {
@@ -509,6 +519,10 @@ button {
 
   .footer {
     flex-direction: column;
+  }
+
+  .footer-brand br {
+    display: none;
   }
 
   .footer-nav > .nav-list {
