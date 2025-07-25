@@ -389,7 +389,9 @@ button {
 }
 
 .join-form {
-  width: 80%;
+  padding-inline: 2rem;
+  width: 100%;
+  max-width: 1140px;
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -402,11 +404,11 @@ button {
 }
 
 .join-form > .form-input {
-  width: 60%;
+  width: 80%;
 }
 
 .join-form > .btn-primary {
-  width: 15%;
+  width: 20%;
 }
 
 /* Footer */
@@ -509,10 +511,6 @@ button {
 
   .join {
     height: 276px;
-  }
-
-  .join-form > .form-input {
-    width: 60%;
   }
 
   .join-form > .btn-primary {
